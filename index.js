@@ -24,8 +24,6 @@ app.use(cors({
 app.use(express.json())
 app.use(express.static(path.join(__dirname, "files")));
 
-
-app.use("/upload", require("./upload"))
 app.use("/register", require("./register"))
 
 app.listen(PORT, () => {
