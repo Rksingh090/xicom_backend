@@ -9,7 +9,9 @@ const PORT = 4000 || process.env.PORT;
 
 const app = express();
 
-mongoose.connect(process.env.MONGO_URL)
+mongoose.connect(process.env.MONGO_URL, {
+    dbName: "XICOM",
+})
     .then(() => {
         console.log("Database connected");
     })
