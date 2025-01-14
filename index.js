@@ -20,7 +20,7 @@ mongoose.connect(process.env.MONGO_URL, {
     })
 
 app.use(cors({
-    origin: ["http://localhost:3000", "http://localhost:42761", "http://0.0.0.0:42761"]
+    origin: ["http://localhost:3000", "http://localhost:44879", "http://0.0.0.0:44879"]
 }))
 
 app.use(express.json())
